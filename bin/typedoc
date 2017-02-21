@@ -52,6 +52,11 @@ console.log("~typedoc~ using ts sources from: " + srcPath);
 console.log("~typedoc~ options: " + JSON.stringify(options));
 var app = new typedoc.Application(options);
 
+// Remove unwanted plugins
+app.renderer.removeComponent('assets');
+app.renderer.removeComponent('javascript-index');
+app.renderer.removeComponent('pretty-print');
+
 // Register handlebars helpers.
 handlebars.registerHelper('newLine', function () { return '\n'; });
 
