@@ -1,6 +1,6 @@
 {
   "name": "typedoc-md-theme",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "A simple markdown theme for typedoc.",
   "main": "bin/typedoc",
   "scripts": {
