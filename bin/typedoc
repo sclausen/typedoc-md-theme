@@ -57,9 +57,6 @@ app.renderer.removeComponent('assets');
 app.renderer.removeComponent('javascript-index');
 app.renderer.removeComponent('pretty-print');
 
-// Register handlebars helpers.
-handlebars.registerHelper('newLine', function () { return '\n'; });
-
 // Tweak typedoc in order to:
 // 1. Output files with .md extensions
 // 2. Produce internal links with .md extensions
